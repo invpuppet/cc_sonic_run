@@ -1,0 +1,15 @@
+import pygame
+from pygame.locals import *
+pygame.init()
+
+fenetre = pygame.display.set_mode((640,480), RESIZABLE)
+
+BACKGROUD = pygame.image.load("background.png").convert()
+fenetre.blit(BACKGROUD, (0,0))
+
+pygame.display.flip()
+
+
+continuer = 1
+while continuer:
+    continuer = int(input())
